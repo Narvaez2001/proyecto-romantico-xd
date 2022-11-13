@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <style>
+        .body{
+            background-color: red;
+            text-align: center;
+        }
+        .body__title{
+            color: white;
+        }
+        .body__img{
+            width: 100%;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body class="body">
+    <h1 class="body__title">💍 Quieres ser el amor de mi vida? 💍</h1>
+    <img src="http://4everstatic.com/imagenes/850xX/animales/perritos/perro-con-una-rosa,-cachorro,-golden-retriever,-rosa-147870.jpg" alt="perrito con una rosa" class="body__img">
+    <button id="yes">Si acepto 😍</button>
+    <button id="no">No puedo 😭</button>
+    <script>
+        const vutonSi = document.getElementById('yes');
+        const vutonNo = document.getElementById('no');
+
+        const somosnovios = () => {
+            alert('🧡Contigo lo quiero todo🧡');
+            alert('😻Nos casaremos mañana😻');
+            location.href ='https://www.youtube.com/watch?v=2oooF0_1390=19s' ;
+
+        }
+        const evitarquerompamibobo = () => {
+            vutonNo.style.position = 'absolute';
+            vutonNo.style.top = (Math.random()*window.innerHeight) + 'px';
+            vutonNo.style.left = (Math.random()*window.innerWidth) + 'px';    
+        }
+        vutonSi.addEventListener('click', somosnovios);
+        vutonNo.addEventListener('mouseover',evitarquerompamibobo);
+    </script>
+</body>
+</html>
